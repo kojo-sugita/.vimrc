@@ -2,11 +2,11 @@
 " Latest Revision:  2009-08-21
 
 " {{{ Common setting
-"/* --- ƒtƒHƒ“ƒg, ”wŒiFİ’è --- */
-"”wŒiF
+"/* --- ãƒ•ã‚©ãƒ³ãƒˆ, èƒŒæ™¯è‰²è¨­å®š --- */
+"èƒŒæ™¯è‰²
 colorscheme rootwater
 
-"ƒtƒHƒ“ƒgİ’è
+"ãƒ•ã‚©ãƒ³ãƒˆè¨­å®š
 if has("unix")
 	" set guifont=IPAMonaGothic\ 12
 	" set guifontwide=IPAMonaGothic\ 12
@@ -17,8 +17,8 @@ if has("unix")
 	autocmd GUIEnter * winsize 80 50
 
 elseif has("gui_win32")
-	" set guifont=HGºŞ¼¯¸M:h11
-	" set guifontwide=HGºŞ¼¯¸M:h11
+	" set guifont=HGï½ºï¾ï½¼ï½¯ï½¸M:h11
+	" set guifontwide=HGï½ºï¾ï½¼ï½¯ï½¸M:h11
 	set guifont=sazanami_gothic:h10
 	set guifontwide=sazanami_gothic:h10
 	set printfont=MS_Gothic:h11:cSHIFTJIS
@@ -26,52 +26,52 @@ elseif has("gui_win32")
 	autocmd GUIEnter * winsize 100 50
 endif
 
-"/* --- •\¦ --- */
-syntax on           "ƒVƒ“ƒ^ƒbƒNƒX—LŒø
+"/* --- è¡¨ç¤º --- */
+syntax on           "ã‚·ãƒ³ã‚¿ãƒƒã‚¯ã‚¹æœ‰åŠ¹
 
-set number          "s”Ô†‚ğ•\¦
-set laststatus=2    "ƒXƒe[ƒ^ƒXƒ‰ƒCƒ“‚ğ•\¦
-set showcmd         "“ü—Í’†‚ÌƒRƒ}ƒ“ƒh‚ğƒXƒe[ƒ^ƒX‚É•\¦‚·‚é
-set ruler           "Œ»İ‚ÌƒJ[ƒ\ƒ‹ˆÊ’u‚ğ•\¦
-set wrap! = nowrap  "Ü‚è•Ô‚µ‚µ‚È‚¢
-set foldmethod=marker "Ü‚è‚½‚½‚İ‚ğ—LŒø‚É‚·‚é
+set number          "è¡Œç•ªå·ã‚’è¡¨ç¤º
+set laststatus=2    "ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³ã‚’è¡¨ç¤º
+set showcmd         "å…¥åŠ›ä¸­ã®ã‚³ãƒãƒ³ãƒ‰ã‚’ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã«è¡¨ç¤ºã™ã‚‹
+set ruler           "ç¾åœ¨ã®ã‚«ãƒ¼ã‚½ãƒ«ä½ç½®ã‚’è¡¨ç¤º
+set wrap! = nowrap  "æŠ˜ã‚Šè¿”ã—ã—ãªã„
+set foldmethod=marker "æŠ˜ã‚ŠãŸãŸã¿ã‚’æœ‰åŠ¹ã«ã™ã‚‹
 
-"/* --- ŒŸõİ’è --- */
-set hlsearch        "ŒŸõŒ‹‰Ê•¶š—ñ‚ÌƒnƒCƒ‰ƒCƒg‚ğ—LŒø‚É‚·‚é
-set ignorecase      "‘å•¶š¬•¶š‚ğ‹æ•Ê‚È‚­ŒŸõ‚·‚é
-set smartcase       "ŒŸõ•¶š—ñ‚É‘å•¶š‚ªŠÜ‚Ü‚ê‚Ä‚¢‚éê‡‚Í‹æ•Ê‚µ‚ÄŒŸõ‚·‚é
-set incsearch       "ƒCƒ“ƒNƒŠƒƒ“ƒ^ƒ‹ƒT[ƒ`
+"/* --- æ¤œç´¢è¨­å®š --- */
+set hlsearch        "æ¤œç´¢çµæœæ–‡å­—åˆ—ã®ãƒã‚¤ãƒ©ã‚¤ãƒˆã‚’æœ‰åŠ¹ã«ã™ã‚‹
+set ignorecase      "å¤§æ–‡å­—å°æ–‡å­—ã‚’åŒºåˆ¥ãªãæ¤œç´¢ã™ã‚‹
+set smartcase       "æ¤œç´¢æ–‡å­—åˆ—ã«å¤§æ–‡å­—ãŒå«ã¾ã‚Œã¦ã„ã‚‹å ´åˆã¯åŒºåˆ¥ã—ã¦æ¤œç´¢ã™ã‚‹
+set incsearch       "ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ã‚¿ãƒ«ã‚µãƒ¼ãƒ
 
-"‘I‘ğ”ÍˆÍ“à‚©‚çŒŸõ‚Å‚«‚é‚æ‚¤‚É‚·‚é
+"é¸æŠç¯„å›²å†…ã‹ã‚‰æ¤œç´¢ã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹
 vnoremap <silent> / :<C-U>call RangeSearch('/')<CR>:if  strlen(g:srchstr) > 0\|exec '/'.g:srchstr\|endif<CR>
 vnoremap <silent> ? :<C-U>call RangeSearch('?')<CR>:if strlen(g:srchstr) > 0\|exec '?'.g:srchstr\|endif<CR>
 
-"/* --- "Š‡ŒÊ‚Ìİ’è --- */
-set showmatch       "Š‡ŒÊ‚Ì‘Î‰•\¦
+"/* --- "æ‹¬å¼§ã®è¨­å®š --- */
+set showmatch       "æ‹¬å¼§ã®å¯¾å¿œè¡¨ç¤º
 
-"Š‡ŒÊ‚ª“ü—Í‚³‚ê‚½‚Æ‚«‚É©“®“I‚É•Â‚¶Š‡ŒÊ‚ğ“ü—Í‚·‚é
+"æ‹¬å¼§ãŒå…¥åŠ›ã•ã‚ŒãŸã¨ãã«è‡ªå‹•çš„ã«é–‰ã˜æ‹¬å¼§ã‚’å…¥åŠ›ã™ã‚‹
 inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
 inoremap { {}<LEFT>
 
-"/* --- ƒCƒ“ƒfƒ“ƒg, Tab•¶š, EOF‚È‚Ç‚Ìİ’è --- */
-set autoindent      "©“®ƒCƒ“ƒfƒ“ƒg
-set smartindent     "©“®ƒCƒ“ƒfƒ“ƒg
-set shiftwidth=4    "autoindent‚É‘}“ü‚³‚ê‚éƒ^ƒu‚Ì•
-set tabstop=4       "ƒ^ƒu•‚Ìİ’è
-set list            "Tab•¶š‚âAEOF‚ğ•\¦
+"/* --- ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆ, Tabæ–‡å­—, EOFãªã©ã®è¨­å®š --- */
+set autoindent      "è‡ªå‹•ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆ
+set smartindent     "è‡ªå‹•ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆ
+set shiftwidth=4    "autoindentæ™‚ã«æŒ¿å…¥ã•ã‚Œã‚‹ã‚¿ãƒ–ã®å¹…
+set tabstop=4       "ã‚¿ãƒ–å¹…ã®è¨­å®š
+set list            "Tabæ–‡å­—ã‚„ã€EOFã‚’è¡¨ç¤º
 
-"tab•¶š‚âAEOL‚ğ•ÏX
+"tabæ–‡å­—ã‚„ã€EOLã‚’å¤‰æ›´
 set lcs=tab:..,eol:<,extends:\
 
-"‘SŠpƒXƒy[ƒX, s––”¼ŠpƒXƒy[ƒX‚ÌF•Ï‚¦
+"å…¨è§’ã‚¹ãƒšãƒ¼ã‚¹, è¡Œæœ«åŠè§’ã‚¹ãƒšãƒ¼ã‚¹ã®è‰²å¤‰ãˆ
 if has("syntax")
 	syntax on
 	function! ActivateInvisibleIndicator()
-		"‘SŠpƒXƒy[ƒX‚ğ•\¦
-		syntax match InvisibleJISX0208Space "@" display containedin=ALL
+		"å…¨è§’ã‚¹ãƒšãƒ¼ã‚¹ã‚’è¡¨ç¤º
+		syntax match InvisibleJISX0208Space "ã€€" display containedin=ALL
 		highlight InvisibleJISX0208Space term=underline ctermbg=Blue guibg=#6666ff
-		"s––‚Ì”¼ŠpƒXƒy[ƒX‚ğ•\¦
+		"è¡Œæœ«ã®åŠè§’ã‚¹ãƒšãƒ¼ã‚¹ã‚’è¡¨ç¤º
 		syntax match InvisibleTrailedSpace "[ \t]\+$" display containedin=ALL
 		highlight InvisibleTrailedSpace term=underline ctermbg=red guibg=#ff6666
 	endf
@@ -85,15 +85,15 @@ endif
 map <S-Tab> :call NextField(' \{2,}',2,' ',0)<CR>
 imap <S-Tab> <C-O>:call NextField(' \{2,}',2,' ',0)<CR>
 
-"/* --- ƒ„ƒ“ƒN‚Ìİ’è --- */
-"‘I‘ğ‚µ‚½”ÍˆÍ‚És”Ô†‚ğ‚Â‚¯‚ÄƒŒƒWƒXƒ^ * ‚Éƒ„ƒ“ƒN
+"/* --- ãƒ¤ãƒ³ã‚¯ã®è¨­å®š --- */
+"é¸æŠã—ãŸç¯„å›²ã«è¡Œç•ªå·ã‚’ã¤ã‘ã¦ãƒ¬ã‚¸ã‚¹ã‚¿ * ã«ãƒ¤ãƒ³ã‚¯
 vnoremap \y :call YankWithLineNumber()<CR>
 
-"–³–¼ƒŒƒWƒXƒ^‚É“ü‚éƒf[ƒ^‚ğA*ƒŒƒWƒXƒ^‚É‚à“ü‚ê‚éB
+"ç„¡åãƒ¬ã‚¸ã‚¹ã‚¿ã«å…¥ã‚‹ãƒ‡ãƒ¼ã‚¿ã‚’ã€*ãƒ¬ã‚¸ã‚¹ã‚¿ã«ã‚‚å…¥ã‚Œã‚‹ã€‚
 set clipboard+=unnamed
 
-"/* --- •¶šƒR[ƒh --- */
-" •¶šƒR[ƒh‚Ì©“®”F¯(http://www.kawaz.jp/pukiwiki/?vim#g59923b3‚©‚ç’¸‘Õ)
+"/* --- æ–‡å­—ã‚³ãƒ¼ãƒ‰ --- */
+" æ–‡å­—ã‚³ãƒ¼ãƒ‰ã®è‡ªå‹•èªè­˜(http://www.kawaz.jp/pukiwiki/?vim#g59923b3ã‹ã‚‰é ‚æˆ´)
 if &encoding !=# 'utf-8'
 	set encoding=japan
 	set fileencoding=japan
@@ -101,16 +101,16 @@ endif
 if has('iconv')
 	let s:enc_euc = 'euc-jp'
 	let s:enc_jis = 'iso-2022-jp'
-	" iconv‚ªeucJP-ms‚É‘Î‰‚µ‚Ä‚¢‚é‚©‚ğƒ`ƒFƒbƒN
+	" iconvãŒeucJP-msã«å¯¾å¿œã—ã¦ã„ã‚‹ã‹ã‚’ãƒã‚§ãƒƒã‚¯
 	if iconv("\x87\x64\x87\x6a", 'cp932', 'eucjp-ms') ==# "\xad\xc5\xad\xcb"
 		let s:enc_euc = 'eucjp-ms'
 		let s:enc_jis = 'iso-2022-jp-3'
-		" iconv‚ªJISX0213‚É‘Î‰‚µ‚Ä‚¢‚é‚©‚ğƒ`ƒFƒbƒN
+		" iconvãŒJISX0213ã«å¯¾å¿œã—ã¦ã„ã‚‹ã‹ã‚’ãƒã‚§ãƒƒã‚¯
 	elseif iconv("\x87\x64\x87\x6a", 'cp932', 'euc-jisx0213') ==# "\xad\xc5\xad\xcb"
 		let s:enc_euc = 'euc-jisx0213'
 		let s:enc_jis = 'iso-2022-jp-3'
 	endif
-	" fileencodings‚ğ\’z
+	" fileencodingsã‚’æ§‹ç¯‰
 	if &encoding ==# 'utf-8'
 		let s:fileencodings_default = &fileencodings
 		let &fileencodings = s:enc_jis .','. s:enc_euc .',cp932'
@@ -130,11 +130,11 @@ if has('iconv')
 			let &fileencodings = &fileencodings .','. s:enc_euc
 		endif
 	endif
-	" ’è”‚ğˆ•ª
+	" å®šæ•°ã‚’å‡¦åˆ†
 	unlet s:enc_euc
 	unlet s:enc_jis
 endif
-" “ú–{Œê‚ğŠÜ‚Ü‚È‚¢ê‡‚Í fileencoding ‚É encoding ‚ğg‚¤‚æ‚¤‚É‚·‚é
+" æ—¥æœ¬èªã‚’å«ã¾ãªã„å ´åˆã¯ fileencoding ã« encoding ã‚’ä½¿ã†ã‚ˆã†ã«ã™ã‚‹
 if has('autocmd')
 	function! AU_ReCheck_FENC()
 		if &fileencoding =~# 'iso-2022-jp' && search("[^\x01-\x7e]", 'n') == 0
@@ -143,65 +143,65 @@ if has('autocmd')
 	endfunction
 	autocmd BufReadPost * call AU_ReCheck_FENC()
 endif
-" ‰üsƒR[ƒh‚Ì©“®”F¯
+" æ”¹è¡Œã‚³ãƒ¼ãƒ‰ã®è‡ªå‹•èªè­˜
 set fileformats=unix,dos,mac
-"  ‚Æ‚©›‚Ì•¶š‚ª‚ ‚Á‚Ä‚àƒJ[ƒ\ƒ‹ˆÊ’u‚ª‚¸‚ê‚È‚¢‚æ‚¤‚É‚·‚é
+" â–¡ã¨ã‹â—‹ã®æ–‡å­—ãŒã‚ã£ã¦ã‚‚ã‚«ãƒ¼ã‚½ãƒ«ä½ç½®ãŒãšã‚Œãªã„ã‚ˆã†ã«ã™ã‚‹
 if exists('&ambiwidth')
 	set ambiwidth=double
 endif
 
-"“ú–{Œêİ’è
+"æ—¥æœ¬èªè¨­å®š
 if has('multi_byte_ime') || has('xim')
-    " “ú–{Œê“ü—ÍON‚ÌƒJ[ƒ\ƒ‹‚ÌF‚ğİ’è
+    " æ—¥æœ¬èªå…¥åŠ›ONæ™‚ã®ã‚«ãƒ¼ã‚½ãƒ«ã®è‰²ã‚’è¨­å®š
     highlight CursorIM guibg=Red guifg=NONE
 endif
 
 
-"/* --- ‚»‚Ì‘¼•ÒW --- */
-"•\¦s’PˆÊ‚ÅˆÚ“®
+"/* --- ãã®ä»–ç·¨é›† --- */
+"è¡¨ç¤ºè¡Œå˜ä½ã§ç§»å‹•
 noremap j gj
 noremap k gk
 vnoremap j gj
 vnoremap k gk
 
-" ƒCƒ“ƒT[ƒgƒ‚[ƒh‚ÅƒoƒbƒNƒXƒy[ƒX‚ğ‰Ÿ‚µ‚½‚Æ‚«‚Ì‘Îô
+" ã‚¤ãƒ³ã‚µãƒ¼ãƒˆãƒ¢ãƒ¼ãƒ‰ã§ãƒãƒƒã‚¯ã‚¹ãƒšãƒ¼ã‚¹ã‚’æŠ¼ã—ãŸã¨ãã®å¯¾ç­–
 "noremap ^? 
 "noremap! ^? 
 "noremap 
 "noremap!  
 
-"‘OŒãˆÚ“®‚ğEmacs‚Ì‚æ‚¤‚ÈƒL[ƒoƒCƒ“ƒh‚É‚·‚é
+"å‰å¾Œç§»å‹•ã‚’Emacsã®ã‚ˆã†ãªã‚­ãƒ¼ãƒã‚¤ãƒ³ãƒ‰ã«ã™ã‚‹
 inoremap <C-f> <Right>
 inoremap  <Right>
 inoremap <C-b> <Left>
 inoremap  <Left>
 
-"/* --- ‚»‚Ì‘¼ --- */
-filetype plugin on  "ƒtƒ@ƒCƒ‹ƒ^ƒCƒvƒvƒ‰ƒOƒCƒ“‚ğ—LŒø‚É‚·‚é
-set vb t_vb=        "ƒr[ƒv‰¹‚ğ‚È‚ç‚³‚È‚¢
-set guioptions=F    "GUIƒIƒvƒVƒ‡ƒ“
-set nobackup        "ƒoƒbƒNƒAƒbƒv‚µ‚È‚¢
-set autoread        "•ÒW‚³‚ê‚½‚ç“Ç‚İ’¼‚·
-set wildchar=<Tab>  "Tab‚Å•âŠ®‚Å‚«‚é‚æ‚¤‚É‚·‚é
-set nocompatible    "VIŒİŠ·‚ğƒIƒt
+"/* --- ãã®ä»– --- */
+filetype plugin on  "ãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¤ãƒ—ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’æœ‰åŠ¹ã«ã™ã‚‹
+set vb t_vb=        "ãƒ“ãƒ¼ãƒ—éŸ³ã‚’ãªã‚‰ã•ãªã„
+set guioptions=F    "GUIã‚ªãƒ—ã‚·ãƒ§ãƒ³
+set nobackup        "ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—ã—ãªã„
+set autoread        "ç·¨é›†ã•ã‚ŒãŸã‚‰èª­ã¿ç›´ã™
+set wildchar=<Tab>  "Tabã§è£œå®Œã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹
+set nocompatible    "VIäº’æ›ã‚’ã‚ªãƒ•
 
-"complete‚ğ‰Šú‰»
+"completeã‚’åˆæœŸåŒ–
 au FileType * set complete=.,w,b,u,t,i
 
-"<Leader>‚ğ\‚É‚·‚é
+"<Leader>ã‚’\ã«ã™ã‚‹
 let mapleader = '\'
 
-"˜A‘±‚·‚é‹ó”’s‚ğˆ³k‚·‚é
+"é€£ç¶šã™ã‚‹ç©ºç™½è¡Œã‚’åœ§ç¸®ã™ã‚‹
 nnoremap <silent> <C-x><C-o> :call DeleteBlankLines()<CR>
 
-".vimrc‚ÌÄ“Ç‚İ‚İ
+".vimrcã®å†èª­ã¿è¾¼ã¿
 if has("unix")
 	noremap <C-F12> :source ~/.vimrc<CR>
 elseif has("gui_win32")
 	noremap <C-F12> :source $VIM/_gvimrc<CR>
 endif
 
-" ’ˆÓ: ‚±‚Ì“à—e‚Í:filetype on‚æ‚è‚àŒã‚É‹Lq‚·‚é‚±‚ÆB
+" æ³¨æ„: ã“ã®å†…å®¹ã¯:filetype onã‚ˆã‚Šã‚‚å¾Œã«è¨˜è¿°ã™ã‚‹ã“ã¨ã€‚
 autocmd FileType *
 \   if &l:omnifunc == ''
 \ |   setlocal omnifunc=syntaxcomplete#Complete
@@ -234,23 +234,23 @@ au BufNewFile,BufRead *.gpi,*.gih call GnuplotSettings()
 
 " {{{ Windows batch file
 function! DosBatchSettings()
-	"Windowsƒoƒbƒ`ƒtƒ@ƒCƒ‹‚Ì«‘ƒtƒ@ƒCƒ‹‚ğƒZƒbƒg
+	"Windowsãƒãƒƒãƒãƒ•ã‚¡ã‚¤ãƒ«ã®è¾æ›¸ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚»ãƒƒãƒˆ
 	set dictionary=$VIMRUNTIME/dict/dosbatch.dict
 
-	"Às
+	"å®Ÿè¡Œ
 	noremap <F5> <Esc>:! %<Enter>
 
 endfunction
 " }}}
 " {{{ VBScript
 function! VBScriptSettings()
-	"VBScript‚Ì«‘ƒtƒ@ƒCƒ‹‚ğƒZƒbƒg
+	"VBScriptã®è¾æ›¸ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚»ãƒƒãƒˆ
 	set dictionary=$VIMRUNTIME/dict/vbscript.dict,$VIMRUNTIME/dict/wsh.dict
 
-	"Enter‚ª‰Ÿ‚³‚ê‚½‚Æ‚«‚É©“®•âŠ®‚·‚é
+	"EnterãŒæŠ¼ã•ã‚ŒãŸã¨ãã«è‡ªå‹•è£œå®Œã™ã‚‹
 	inoremap <expr> <CR> AutoEndForVBScript()
 
-	"Às
+	"å®Ÿè¡Œ
 	noremap <F5> <Esc>:! %<Enter>
 
 endfunction
@@ -260,7 +260,7 @@ function! CCommonSettings()
 
 	set cindent
 
-	"ƒL[ƒ}ƒbƒv‚ğ•ÏX
+	"ã‚­ãƒ¼ãƒãƒƒãƒ—ã‚’å¤‰æ›´
 	inoremap <expr> ; GetSemicolonForC()
 	inoremap <expr> { GetBraceForC()
 	inoremap <expr> " GetDoubleQuotes()
@@ -268,10 +268,10 @@ function! CCommonSettings()
 	inoremap <expr> <Space> GetSpace()
 	inoremap , ,<Space>
 
-	"ŠÖ”‚ğ”ÍˆÍ‘I‘ğ(VimWiki‚æ‚è)
+	"é–¢æ•°ã‚’ç¯„å›²é¸æŠ(VimWikiã‚ˆã‚Š)
 	nnoremap vf ][v[[?^?s*$<CR>
 
-	"ƒuƒƒbƒN‘I‘ğ(VimWiki‚æ‚è)
+	"ãƒ–ãƒ­ãƒƒã‚¯é¸æŠ(VimWikiã‚ˆã‚Š)
 	nnoremap vb /{<CR>%v%0
 
 endfunction
@@ -280,13 +280,13 @@ endfunction
 " }}}
 " {{{ C
 function! CSettings()
-	"c‚Ì«‘ƒtƒ@ƒCƒ‹‚ğƒZƒbƒg
+	"cã®è¾æ›¸ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚»ãƒƒãƒˆ
 	if has("unix")
 		set dictionary=$HOME/.vim/dict/c.dict
 	elseif has("gui_win32")
 		set dictionary=$VIMRUNTIME/dict/c.dict
 	endif
-	"ƒIƒ€ƒj•âŠ®
+	"ã‚ªãƒ ãƒ‹è£œå®Œ
 	if has("autocmd") && exists("+omnifunc")
 		"<C-x><C-o>
 		set omnifunc=ccomplete#Complete
@@ -303,10 +303,10 @@ function! CSettings()
 	" inoremap <expr> :ff GetFunctionForC_2select("float")
 	" inoremap <expr> :fd GetFunctionForC_2select("double")
 
-	"gccƒRƒ“ƒpƒCƒ‰İ’è
+	"gccã‚³ãƒ³ãƒ‘ã‚¤ãƒ©è¨­å®š
 	nmap <F5> :call MakeC_gcc()<cr>
 
-	"bccƒRƒ“ƒpƒCƒ‰İ’è
+	"bccã‚³ãƒ³ãƒ‘ã‚¤ãƒ©è¨­å®š
 	nmap <F6> :call MakeC_bcc()<cr>
 
 	set nowrap tabstop=4 tw=0 sw=4 expandtab
@@ -315,29 +315,29 @@ endfunction
 " }}}
 " {{{ C++
 function! CppSettings()
-	"C++Œ¾Œê‚ÌƒL[ƒ[ƒh‚ğƒnƒCƒ‰ƒCƒg
+	"C++è¨€èªã®ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰ã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆ
 	:let java_allow_cpp_keywords=1
 endfunction
 " }}}
 " {{{ Java
 function! JavaSettings()
-	"java‚Ì«‘ƒtƒ@ƒCƒ‹‚ğƒZƒbƒg
+	"javaã®è¾æ›¸ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚»ãƒƒãƒˆ
 	if has("unix")
 		set dictionary=$HOME/.vim/dict/j2se14.dict
 	elseif has("gui_win32")
 		set dictionary=$VIMRUNTIME/dict/j2se14.dict
 	endif
 
-	"ƒnƒCƒ‰ƒCƒg
-	:let java_highlight_all=1 "JavaŒ¾Œê‚Ì•W€‚ÌƒNƒ‰ƒX–¼‚ğƒnƒCƒ‰ƒCƒg
-	:let java_highlight_debug=1 "ƒfƒoƒbƒO•¶‚ÌƒnƒCƒ‰ƒCƒg
-	:let java_space_errors=1 "—]•ª‚È‹ó”’‚É‘Î‚µ‚ÄƒnƒCƒ‰ƒCƒg
-	:let java_highlight_functions=1 "ƒƒ\ƒbƒhéŒ¾•¶‚ğƒnƒCƒ‰ƒCƒg
+	"ãƒã‚¤ãƒ©ã‚¤ãƒˆ
+	:let java_highlight_all=1 "Javaè¨€èªã®æ¨™æº–ã®ã‚¯ãƒ©ã‚¹åã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆ
+	:let java_highlight_debug=1 "ãƒ‡ãƒãƒƒã‚°æ–‡ã®ãƒã‚¤ãƒ©ã‚¤ãƒˆ
+	:let java_space_errors=1 "ä½™åˆ†ãªç©ºç™½ã«å¯¾ã—ã¦ãƒã‚¤ãƒ©ã‚¤ãƒˆ
+	:let java_highlight_functions=1 "ãƒ¡ã‚½ãƒƒãƒ‰å®£è¨€æ–‡ã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆ
 
-	"ƒRƒ“ƒpƒCƒ‰İ’è(Java)
+	"ã‚³ãƒ³ãƒ‘ã‚¤ãƒ©è¨­å®š(Java)
 	compiler javac
 
-	"ƒRƒ“ƒpƒCƒ‹
+	"ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«
 	nmap <F5> :call MakeJava()<CR>
 
 	"javacomplete
@@ -351,14 +351,14 @@ endfunction
 " }}}
 " {{{ JavaScript
 function! JavaScriptSettings()
-	"JavaScript‚Ì«‘ƒtƒ@ƒCƒ‹‚ğƒZƒbƒg
+	"JavaScriptã®è¾æ›¸ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚»ãƒƒãƒˆ
 	if has("unix")
 		set dictionary=$HOME/.vim/dict/javascript.dict
 	elseif has("gui_win32")
 		set dictionary=$VIMRUNTIME/dict/javascript.dict
 	endif
 
-	"ƒIƒ€ƒj•âŠ®
+	"ã‚ªãƒ ãƒ‹è£œå®Œ
 	if has("autocmd") && exists("+omnifunc")
 		"<C-x><C-o>
 		set omnifunc=javascriptcomplete#CompleteJS
@@ -368,39 +368,39 @@ endfunction
 " }}}
 " {{{ Objective-C
 function! ObjectiveCSettings()
-	"gccƒRƒ“ƒpƒCƒ‰İ’è
+	"gccã‚³ãƒ³ãƒ‘ã‚¤ãƒ©è¨­å®š
 	nmap <F5> :call MakeObjectiveC_gcc()<cr>
 endfunction
 " }}}
 " {{{ Ruby
 function! RubySettings()
-	"Ruby‚Ì‚Æ‚«‚ÍAƒ^ƒu•‚ğ2‚Éİ’è & ƒ^ƒu•¶š‚Ì‘ã‚í‚è‚É“¯‚¶•‚Ì‹ó”’•¶š‚ğ“ü‚ê‚é
+	"Rubyã®ã¨ãã¯ã€ã‚¿ãƒ–å¹…ã‚’2ã«è¨­å®š & ã‚¿ãƒ–æ–‡å­—ã®ä»£ã‚ã‚Šã«åŒã˜å¹…ã®ç©ºç™½æ–‡å­—ã‚’å…¥ã‚Œã‚‹
 	set nowrap tabstop=2 tw=0 sw=2 expandtab
 
-	"ƒRƒ“ƒpƒCƒ‰İ’è(RUBY)
+	"ã‚³ãƒ³ãƒ‘ã‚¤ãƒ©è¨­å®š(RUBY)
 	compiler ruby
 
 	nmap <F5> :call DebugRuby()<cr>
 
-	"<F6>‚Åƒoƒbƒtƒ@‚ÌRubyƒXƒNƒŠƒvƒg‚ğÀs‚µAŒ‹‰Ê‚ğƒvƒŒƒrƒ…[•\¦
+	"<F6>ã§ãƒãƒƒãƒ•ã‚¡ã®Rubyã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’å®Ÿè¡Œã—ã€çµæœã‚’ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼è¡¨ç¤º
 	vmap <silent> <F6> :call Ruby_eval_vsplit()<CR>
 	nmap <silent> <F6> mzggVG<F6>`z
 	map  <silent> <S-F6> :pc<CR>
 
-	"<C-F10>‚ÅRubyƒXƒNƒŠƒvƒg‚ğ•Û‘¶ŒãƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‚©‚çÀs
+	"<C-F10>ã§Rubyã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’ä¿å­˜å¾Œã‚³ãƒãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã‹ã‚‰å®Ÿè¡Œ
 	nmap <silent> <C-F6> :w<CR>:!ruby %<CR>
 endfunction
 " }}}
 " {{{ HTML,XHTML,XML,XUL commonness
 function! TagCommonSettings()
 
-	"ƒ^ƒu•‚ğ2‚Éİ’è
+	"ã‚¿ãƒ–å¹…ã‚’2ã«è¨­å®š
 	set nowrap tabstop=2 tw=0 sw=2
 
 	inoremap <expr> " GetDoubleQuotes()
 	inoremap <buffer> < <><LEFT>
 
-	"‹å“Ç“_‚ğ.‚â,‚É•ÏŠ·‚·‚é
+	"å¥èª­ç‚¹ã‚’.ã‚„,ã«å¤‰æ›ã™ã‚‹
 	nmap <F12> :call ConvertHTMLPunctuation()<CR>
 
 endfunction
@@ -408,19 +408,19 @@ endfunction
 " {{{ HTML
 function! HTMLSettings()
 
-	"ƒ}[ƒNƒAƒbƒv‹L†‚ğ•âŠ®‚·‚é
+	"ãƒãƒ¼ã‚¯ã‚¢ãƒƒãƒ—è¨˜å·ã‚’è£œå®Œã™ã‚‹
 	inoremap <buffer> \" &quot;
     inoremap <buffer> \& &amp;
     inoremap <buffer> \< &lt;
     inoremap <buffer> \> &gt;
     inoremap <buffer> \<Space> &nbsp;
 
-	"<F5>‚ÅHtml‚ğ•\¦‚·‚é
+	"<F5>ã§Htmlã‚’è¡¨ç¤ºã™ã‚‹
 	nmap <F5> :! %<CR>
 	" noremap <Leader>W :silent !start firefox %<CR>
 	" noremap <F5> :silent !start firefox %<CR>
 
-	"ƒIƒ€ƒj•âŠ®
+	"ã‚ªãƒ ãƒ‹è£œå®Œ
 	if has("autocmd") && exists("+omnifunc")
 		"<C-x><C-o>
 		set omnifunc=htmlcomplete#CompleteTags
@@ -431,16 +431,16 @@ endfunction
 " {{{ Cascading Style Sheets
 function! CssSettings()
 
-	"ƒ^ƒu•‚ğ2‚Éİ’è
+	"ã‚¿ãƒ–å¹…ã‚’2ã«è¨­å®š
 	set nowrap tabstop=2 tw=0 sw=2
 
-	"ƒIƒ€ƒj•âŠ®
+	"ã‚ªãƒ ãƒ‹è£œå®Œ
 	if has("autocmd") && exists("+omnifunc")
 		"<C-x><C-o>
 		set omnifunc=csscomplete#CompleteCSS
 	endif
 
-	"ƒL[ƒ}ƒbƒv•ÏX
+	"ã‚­ãƒ¼ãƒãƒƒãƒ—å¤‰æ›´
 	inoremap ; ;<CR>
 	inoremap : : 
 	inoremap { {<CR>}<Esc>0bo
@@ -450,7 +450,7 @@ endfunction
 " {{{ XML
 function! XmlSettings()
 
-	"ƒIƒ€ƒj•âŠ®
+	"ã‚ªãƒ ãƒ‹è£œå®Œ
 	if has("autocmd") && exists("+omnifunc")
 		"<C-x><C-o>
 		set omnifunc=xmlcomplete#CompleteTags
@@ -461,14 +461,14 @@ endfunction
 function! XulSettings()
 	set filetype=xul
 
-	"XUL‚Ì«‘ƒtƒ@ƒCƒ‹‚ğƒZƒbƒg
+	"XULã®è¾æ›¸ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚»ãƒƒãƒˆ
 	if has("unix")
 		set dictionary=$HOME/.vim/dict/xul.dict
 	elseif has("gui_win32")
 		set dictionary=$VIMRUNTIME/dict/xul.dict
 	endif
 
-	"ƒIƒ€ƒj•âŠ®
+	"ã‚ªãƒ ãƒ‹è£œå®Œ
 	if has("autocmd") && exists("+omnifunc")
 		"<C-x><C-o>
 		set omnifunc=xmlcomplete#CompleteTags
@@ -478,14 +478,14 @@ endfunction
 " {{{ Perl
 function! PerlSettings()
 	compiler perl
-	"Perl‚Ì«‘ƒtƒ@ƒCƒ‹‚ğƒZƒbƒg
+	"Perlã®è¾æ›¸ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚»ãƒƒãƒˆ
 	if has("unix")
 		set dictionary=$HOME/.vim/dict/perl.dict
 	elseif has("gui_win32")
 		set dictionary=$VIMRUNTIME/dict/perl.dict
 	endif
 
-	"ƒL[ƒ}ƒbƒv‚ğ•ÏX
+	"ã‚­ãƒ¼ãƒãƒƒãƒ—ã‚’å¤‰æ›´
 	nmap <F5> :call MakePerl()<CR>
 	nmap <F6> :! perl %<CR>
 
@@ -494,7 +494,7 @@ endfunction
 " }}}
 " {{{ Python
 function! PythonSettings()
-	"ƒIƒ€ƒj•âŠ®
+	"ã‚ªãƒ ãƒ‹è£œå®Œ
 	if has("autocmd") && exists("+omnifunc")
 		"<C-x><C-o>
 		set omnifunc=pythoncomplete#Complete
@@ -503,14 +503,14 @@ endfunction
 " }}}
 " {{{ PHP
 function! PHPSettings()
-	"«‘ƒtƒ@ƒCƒ‹‚Ìİ’è
+	"è¾æ›¸ãƒ•ã‚¡ã‚¤ãƒ«ã®è¨­å®š
 	if has("unix")
 		set dictionary=$HOME/.vim/dict/PHP.dict
 	elseif has("gui_win32")
 		set dictionary=$VIMRUNTIME/dict/PHP.dict
 	endif
 
-	"ƒIƒ€ƒj•âŠ®
+	"ã‚ªãƒ ãƒ‹è£œå®Œ
 	if has("autocmd") && exists("+omnifunc")
 		"<C-x><C-o>
 		set omnifunc=phpcomplete#CompletePHP
@@ -521,13 +521,13 @@ endfunction
 " {{{ LaTeX
 function! LaTeXSettings()
 
-	"l‘¥‰‰Z
+	"å››å‰‡æ¼”ç®—
 	inoremap <buffer> \* \times 
 	inoremap <buffer> \/ \div 
 	inoremap <buffer> \= \equiv 
 	inoremap <buffer> \!= \neq 
 
-	"‚»‚Ì‘¼‰‰Zq
+	"ãã®ä»–æ¼”ç®—å­
 	inoremap <buffer> \<= \leq 
 	inoremap <buffer> \>= \geq 
 	inoremap <buffer> \<< \ll 
@@ -535,51 +535,51 @@ function! LaTeXSettings()
 	inoremap <buffer> \+- \pm 
 	inoremap <buffer> \-+ \mp 
 
-	"”®ƒ‚[ƒh
+	"æ•°å¼ãƒ¢ãƒ¼ãƒ‰
 	inoremap $ $$<LEFT>
 	" inoremap _ _{}<LEFT>
 	" inoremap ^ ^{}<LEFT>
 
-	"LaTeX‚Ì‚Æ‚«‚ÍAƒ^ƒu•‚ğ2‚Éİ’è & ƒ^ƒu•¶š‚Ì‘ã‚í‚è‚É“¯‚¶•‚Ì‹ó”’•¶š‚ğ“ü‚ê‚é
+	"LaTeXã®ã¨ãã¯ã€ã‚¿ãƒ–å¹…ã‚’2ã«è¨­å®š & ã‚¿ãƒ–æ–‡å­—ã®ä»£ã‚ã‚Šã«åŒã˜å¹…ã®ç©ºç™½æ–‡å­—ã‚’å…¥ã‚Œã‚‹
 	set nowrap tabstop=2 tw=0 sw=2 expandtab
 
-	"«‘ƒtƒ@ƒCƒ‹‚Ìİ’è
+	"è¾æ›¸ãƒ•ã‚¡ã‚¤ãƒ«ã®è¨­å®š
 	if has("unix")
 		set dictionary=$HOME/.vim/dict/tex.dict
 	elseif has("gui_win32")
 		set dictionary=$VIMRUNTIME/dict/tex.dict
 	endif
 
-	"LaTeX‚ğƒRƒ“ƒpƒCƒ‹
+	"LaTeXã‚’ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«
 	nmap <C-F5> :! platex %<CR>
 
-	"PDF•ÏŠ·
+	"PDFå¤‰æ›
 	nmap <C-F6> :! dvipdfmx %<<CR>
 
-	"‹å“Ç“_‚ğ.‚â,‚É•ÏŠ·‚·‚é
+	"å¥èª­ç‚¹ã‚’.ã‚„,ã«å¤‰æ›ã™ã‚‹
 	nmap <F12> :call ConvertTexPunctuation()<CR>
 
-	"/* -- VIM-LaTeX—pİ’è -- */
+	"/* -- VIM-LaTeXç”¨è¨­å®š -- */
 	set shellslash
 
-	" grep‚ğ‚Á‚Ä‚¢‚éê‡
+	" grepã‚’æŒã£ã¦ã„ã‚‹å ´åˆ
 	set grepprg=grep\ -nH\ $*
 
 	" OPTIONAL: This enables automatic indentation as you type.
 	filetype indent on
 
-	" dviƒtƒ@ƒCƒ‹¶¬ƒRƒ}ƒ“ƒh
+	" dviãƒ•ã‚¡ã‚¤ãƒ«ç”Ÿæˆã‚³ãƒãƒ³ãƒ‰
 	let g:Tex_CompileRule_dvi = 'platex --interaction=nonstopmode $*'
 
-	" dviƒtƒ@ƒCƒ‹ƒrƒ…[ƒ[
+	" dviãƒ•ã‚¡ã‚¤ãƒ«ãƒ“ãƒ¥ãƒ¼ãƒ¯ãƒ¼
 	let g:Tex_ViewRule_dvi = 'dviout' 
 
-	" pdf¶¬
+	" pdfç”Ÿæˆ
 	let g:Tex_FormatDependency_pdf = 'dvi,pdf'
 	let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
 	let g:Tex_ViewRule_pdf = 'C:\Program Files\Adobe\Acrobat 7.0\Acrobat\Acrobat.exe' 
 
-	" jbitexİ’è
+	" jbitexè¨­å®š
 	let g:Tex_BibtexFlavor = 'jbibtex -kanji=sjis'
 
 endfunction
@@ -587,7 +587,7 @@ endfunction
 " {{{ Assembly
 function! AssemblySettings()
 
-	"ƒ^ƒu•‚ğ8‚Éİ’è
+	"ã‚¿ãƒ–å¹…ã‚’8ã«è¨­å®š
 	set nowrap tabstop=8 tw=0 sw=8
 
 endfunction
@@ -595,17 +595,17 @@ endfunction
 " {{{ Scheme
 function! SchemeSettings()
 	
-	"ƒ^ƒu•‚ğ2‚Éİ’è
+	"ã‚¿ãƒ–å¹…ã‚’2ã«è¨­å®š
 	" set nowrap tabstop=2 tw=0 sw=2
 
-	"«‘ƒtƒ@ƒCƒ‹‚Ìİ’è
+	"è¾æ›¸ãƒ•ã‚¡ã‚¤ãƒ«ã®è¨­å®š
 	if has("unix")
 		set dictionary=$HOME/.vim/dict/R5RS.dict
 	elseif has("gui_win32")
 		set dictionary=$VIMRUNTIME/dict/R5RS.dict
 	endif
 
-	"ƒCƒ“ƒfƒ“ƒg‚Ìİ’è(ƒ{ƒNƒmƒX—lhttp://d.hatena.ne.jp/tanakaBox/20070609/1181382818‚æ‚è’¸‘Õ)
+	"ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆã®è¨­å®š(ãƒœã‚¯ãƒã‚¹æ§˜http://d.hatena.ne.jp/tanakaBox/20070609/1181382818ã‚ˆã‚Šé ‚æˆ´)
 	set nocindent
 	set lisp
 	set lispwords=define
@@ -617,13 +617,13 @@ endfunction
 " {{{ Text
 function! TextSettings()
 	set nocindent
-	"ƒ^ƒu•‚ğ2, ƒ^ƒu•¶š‚Ì•Ï‚í‚è‚ÉƒXƒy[ƒX
+	"ã‚¿ãƒ–å¹…ã‚’2, ã‚¿ãƒ–æ–‡å­—ã®å¤‰ã‚ã‚Šã«ã‚¹ãƒšãƒ¼ã‚¹
 	set nowrap tabstop=2 tw=0 sw=2 expandtab
 endfunction
 " }}}
 " {{{ Gnuplot
 function! GnuplotSettings()
-	"Gnuplot‚Ì«‘ƒtƒ@ƒCƒ‹‚ğƒZƒbƒg
+	"Gnuplotã®è¾æ›¸ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚»ãƒƒãƒˆ
 	if has("unix")
 		set dictionary=$HOME/.vim/dict/gnuplot.dict
 	elseif has("gui_win32")
@@ -649,9 +649,9 @@ nnoremap <silent> <C-x><C-d> :FuzzyFinderDir<CR>
 " }}}
 " {{{ Functions
 "/* ----------------------------------------------------------------------
-" brief:  ‘I‘ğ‚µ‚½”ÍˆÍ‚És”Ô†‚ğ‚Â‚¯‚ÄƒŒƒWƒXƒ^ * ‚Éƒ„ƒ“ƒN‚·‚é
+" brief:  é¸æŠã—ãŸç¯„å›²ã«è¡Œç•ªå·ã‚’ã¤ã‘ã¦ãƒ¬ã‚¸ã‚¹ã‚¿ * ã«ãƒ¤ãƒ³ã‚¯ã™ã‚‹
 " param:  -
-" #http://vimwiki.net/?tips%2F91‚æ‚è’¸‘Õ
+" #http://vimwiki.net/?tips%2F91ã‚ˆã‚Šé ‚æˆ´
 "---------------------------------------------------------------------- */
 function! YankWithLineNumber() range
 	let a = ""
@@ -664,9 +664,9 @@ function! YankWithLineNumber() range
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  Emacs ‚Ì delete-blank-lines ‘Š“–‚ÌŠÖ”
+" brief:  Emacs ã® delete-blank-lines ç›¸å½“ã®é–¢æ•°
 " param:  -
-" #http://vimwiki.net/?tips%2F88‚æ‚è’¸‘Õ
+" #http://vimwiki.net/?tips%2F88ã‚ˆã‚Šé ‚æˆ´
 "---------------------------------------------------------------------- */
 function! DeleteBlankLines()
 	if search('\S','bW')
@@ -689,11 +689,11 @@ endfunction
 
 "/* ----------------------------------------------------------------------
 " brief:  Smarter Table Editing
-" param:  fieldsep ƒtƒB[ƒ‹ƒh‚ÌƒZƒpƒŒ[ƒ^(³‹K•\Œ»)
-"         minlensep ƒtƒB[ƒ‹ƒh‚ÌƒZƒpƒŒ[ƒ^‚ÌÅ¬‚Ì’·‚³
-"         padstr Ÿ‚ÌƒtƒB[ƒ‹ƒh‚Ü‚Å‚ÌŠÔŠu‚ğ–„‚ß‚é•¶š  
-"         offset Ÿ‚ÌƒtƒB[ƒ‹ƒh‚Ìæ“ª‚©‚ç‰½•¶š–Ú‚ÉƒWƒƒƒ“ƒv‚·‚é‚©‚ÌƒIƒtƒZƒbƒg
-" #http://vimwiki.net/?tips%2F46‚æ‚è’¸‘Õ
+" param:  fieldsep ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®ã‚»ãƒ‘ãƒ¬ãƒ¼ã‚¿(æ­£è¦è¡¨ç¾)
+"         minlensep ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®ã‚»ãƒ‘ãƒ¬ãƒ¼ã‚¿ã®æœ€å°ã®é•·ã•
+"         padstr æ¬¡ã®ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã¾ã§ã®é–“éš”ã‚’åŸ‹ã‚ã‚‹æ–‡å­—  
+"         offset æ¬¡ã®ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®å…ˆé ­ã‹ã‚‰ä½•æ–‡å­—ç›®ã«ã‚¸ãƒ£ãƒ³ãƒ—ã™ã‚‹ã‹ã®ã‚ªãƒ•ã‚»ãƒƒãƒˆ
+" #http://vimwiki.net/?tips%2F46ã‚ˆã‚Šé ‚æˆ´
 "---------------------------------------------------------------------- */
 function! NextField(fieldsep,minlensep,padstr,offset)
 	let curposn = col(".")
@@ -726,9 +726,9 @@ function! NextField(fieldsep,minlensep,padstr,offset)
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  ‘I‘ğ”ÍˆÍ“à‚©‚çŒŸõ
-" param:  ŒŸõƒL[
-" #http://vimwiki.net/?tips%2F45‚æ‚è’¸‘Õ
+" brief:  é¸æŠç¯„å›²å†…ã‹ã‚‰æ¤œç´¢
+" param:  æ¤œç´¢ã‚­ãƒ¼
+" #http://vimwiki.net/?tips%2F45ã‚ˆã‚Šé ‚æˆ´
 "---------------------------------------------------------------------- */
 function! RangeSearch(direction)
 	call inputsave()
@@ -744,28 +744,28 @@ function! RangeSearch(direction)
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  CŒ¾ŒêŒn(C,C++,Java,JavaScript)‚ÌƒZƒ~ƒRƒƒ“İ’è(ŒÄo‚µ‘¤)
-"         ƒZƒ~ƒRƒƒ“‚ª‰Ÿ‚³‚ê‚½‚Æ‚«‚Éˆê‚É‰üs‚·‚é‚æ‚¤‚É‚·‚éB
+" brief:  Cè¨€èªç³»(C,C++,Java,JavaScript)ã®ã‚»ãƒŸã‚³ãƒ­ãƒ³è¨­å®š(å‘¼å‡ºã—å´)
+"         ã‚»ãƒŸã‚³ãƒ­ãƒ³ãŒæŠ¼ã•ã‚ŒãŸã¨ãã«ä¸€ç·’ã«æ”¹è¡Œã™ã‚‹ã‚ˆã†ã«ã™ã‚‹ã€‚
 " param:  -
-" return: ; or ;+‰üs
+" return: ; or ;+æ”¹è¡Œ
 "---------------------------------------------------------------------- */
 function! GetSemicolonForC()
-	";+‰üs or ;
+	";+æ”¹è¡Œ or ;
 	return AutoSemicolonEnterForC()
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  CŒ¾ŒêŒn(C,C++,Java,JavaScript)‚ÌƒZƒ~ƒRƒƒ“İ’è
-"         ƒZƒ~ƒRƒƒ“‚ª‰Ÿ‚³‚ê‚½‚Æ‚«‚Éˆê‚É‰üs‚·‚é‚æ‚¤‚É‚·‚éB
+" brief:  Cè¨€èªç³»(C,C++,Java,JavaScript)ã®ã‚»ãƒŸã‚³ãƒ­ãƒ³è¨­å®š
+"         ã‚»ãƒŸã‚³ãƒ­ãƒ³ãŒæŠ¼ã•ã‚ŒãŸã¨ãã«ä¸€ç·’ã«æ”¹è¡Œã™ã‚‹ã‚ˆã†ã«ã™ã‚‹ã€‚
 " param:  -
-" return: ; or ;+‰üs
+" return: ; or ;+æ”¹è¡Œ
 "---------------------------------------------------------------------- */
 function! AutoSemicolonEnterForC()
 	let line = strpart(getline('.'), 0, col('.') - 1)
 
 	" if line =~ '^\t*for \=('
 	if line =~ '^[\t| ]*for \=('
-		"for•¶‚ğ‹Lq’†
+		"foræ–‡ã‚’è¨˜è¿°ä¸­
 		return "; "
 
 	else
@@ -799,9 +799,9 @@ function! AutoSemicolonEnterForC()
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  {‚ª“ü—Í‚³‚ê‚½‚Æ‚«‚É‰üs+•Â‚¶Š‡ŒÊ‚ğ•âŠ®‚·‚é
+" brief:  {ãŒå…¥åŠ›ã•ã‚ŒãŸã¨ãã«æ”¹è¡Œ+é–‰ã˜æ‹¬å¼§ã‚’è£œå®Œã™ã‚‹
 " param:  -
-" return: {} or { + ‰üs + }
+" return: {} or { + æ”¹è¡Œ + }
 "---------------------------------------------------------------------- */
 function! GetBraceForC()
 	let line = strpart(getline('.'), 0, col('.') - 1)
@@ -813,7 +813,7 @@ function! GetBraceForC()
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  Š‡ŒÊ“à‚ÅƒXƒy[ƒX‚ª‰Ÿ‚³‚ê‚½ê‡‚ÉA( ©ƒRƒR‚ÉƒJ[ƒ\ƒ‹ )ó‘Ô‚É‚·‚é
+" brief:  æ‹¬å¼§å†…ã§ã‚¹ãƒšãƒ¼ã‚¹ãŒæŠ¼ã•ã‚ŒãŸå ´åˆã«ã€( â†ã‚³ã‚³ã«ã‚«ãƒ¼ã‚½ãƒ« )çŠ¶æ…‹ã«ã™ã‚‹
 " param:  -
 " return: <Space> or <Space><Space><Left>
 "---------------------------------------------------------------------- */
@@ -832,9 +832,9 @@ function! GetSpace()
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  •¶š—ñ’†‚É‚ ‚éŒŸõƒ[ƒh‚ªƒ}ƒbƒ`‚µ‚½Œ”‚ğ•Ô‚·
-" param:  s, ŒŸõ•¶š—ñ
-" return: ƒ}ƒbƒ`‚µ‚½Œ”
+" brief:  æ–‡å­—åˆ—ä¸­ã«ã‚ã‚‹æ¤œç´¢ãƒ¯ãƒ¼ãƒ‰ãŒãƒãƒƒãƒã—ãŸä»¶æ•°ã‚’è¿”ã™
+" param:  è¡Œ, æ¤œç´¢æ–‡å­—åˆ—
+" return: ãƒãƒƒãƒã—ãŸä»¶æ•°
 "---------------------------------------------------------------------- */
 function! GetMatchCount(line,serchWord)
 	let l:i = 0
@@ -850,7 +850,7 @@ function! GetMatchCount(line,serchWord)
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  ŠJ‚«ƒ_ƒuƒ‹ƒNƒH[ƒg‚ª“ü—Í‚³‚ê‚½‚Æ‚«‚É•Â‚¶ƒ_ƒuƒ‹ƒNƒH[ƒg‚ğ‘}“ü‚·‚é
+" brief:  é–‹ããƒ€ãƒ–ãƒ«ã‚¯ã‚©ãƒ¼ãƒˆãŒå…¥åŠ›ã•ã‚ŒãŸã¨ãã«é–‰ã˜ãƒ€ãƒ–ãƒ«ã‚¯ã‚©ãƒ¼ãƒˆã‚’æŒ¿å…¥ã™ã‚‹
 " param:  -
 " return: " or ""
 "---------------------------------------------------------------------- */
@@ -863,7 +863,7 @@ function! GetDoubleQuotes()
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  ŠJ‚«ƒVƒ“ƒOƒ‹ƒNƒH[ƒg‚ª“ü—Í‚³‚ê‚½‚Æ‚«‚É•Â‚¶ƒVƒ“ƒOƒ‹ƒNƒH[ƒg‚ğ‘}“ü‚·‚é
+" brief:  é–‹ãã‚·ãƒ³ã‚°ãƒ«ã‚¯ã‚©ãƒ¼ãƒˆãŒå…¥åŠ›ã•ã‚ŒãŸã¨ãã«é–‰ã˜ã‚·ãƒ³ã‚°ãƒ«ã‚¯ã‚©ãƒ¼ãƒˆã‚’æŒ¿å…¥ã™ã‚‹
 " param:  -
 " return: ' or ''
 "---------------------------------------------------------------------- */
@@ -877,8 +877,8 @@ function! GetSingleQuotesForC()
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  ƒ_ƒuƒ‹ƒNƒH[ƒe[ƒVƒ‡ƒ“‚Ì‘¶İƒ`ƒFƒbƒN
-" param:  s
+" brief:  ãƒ€ãƒ–ãƒ«ã‚¯ã‚©ãƒ¼ãƒ†ãƒ¼ã‚·ãƒ§ãƒ³ã®å­˜åœ¨ãƒã‚§ãƒƒã‚¯
+" param:  è¡Œ
 " return: 1 or 0
 "---------------------------------------------------------------------- */
 function! IsExistCorrespondDoubleQuote(line)
@@ -892,8 +892,8 @@ function! IsExistCorrespondDoubleQuote(line)
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  ƒVƒ“ƒOƒ‹ƒNƒH[ƒg‚Ì‘¶İƒ`ƒFƒbƒN
-" param:  s
+" brief:  ã‚·ãƒ³ã‚°ãƒ«ã‚¯ã‚©ãƒ¼ãƒˆã®å­˜åœ¨ãƒã‚§ãƒƒã‚¯
+" param:  è¡Œ
 " return: 1 or 0
 "---------------------------------------------------------------------- */
 function! IsExistCorrespondSingleQuote(line)
@@ -907,9 +907,9 @@ function! IsExistCorrespondSingleQuote(line)
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  VBScript‚ÌEnd XXX‚ğ©“®“I‚É•âŠ®‚·‚é
+" brief:  VBScriptã®End XXXã‚’è‡ªå‹•çš„ã«è£œå®Œã™ã‚‹
 " param:  -
-" return: ‰üs or End XXX
+" return: æ”¹è¡Œ or End XXX
 "---------------------------------------------------------------------- */
 function! AutoEndForVBScript()
 	let line = strpart(getline('.'), 0, col('.') - 1)
@@ -918,7 +918,7 @@ function! AutoEndForVBScript()
 		return "\<CR>"
 	endif
 
-	"ƒ|ƒbƒvƒAƒbƒvƒƒjƒ…[‚ª•\¦‚³‚ê‚Ä‚¢‚é‚©?
+	"ãƒãƒƒãƒ—ã‚¢ãƒƒãƒ—ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãŒè¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹ã‹?
 	if pumvisible()
 		return "\<CR>"
 	endif
@@ -960,7 +960,7 @@ function! AutoEndForVBScript()
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  gccƒRƒ“ƒpƒCƒ‰İ’è
+" brief:  gccã‚³ãƒ³ãƒ‘ã‚¤ãƒ©è¨­å®š
 " param:  -
 " return: -
 "---------------------------------------------------------------------- */
@@ -975,7 +975,7 @@ function! MakeC_gcc()
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  bccƒRƒ“ƒpƒCƒ‰İ’è
+" brief:  bccã‚³ãƒ³ãƒ‘ã‚¤ãƒ©è¨­å®š
 " param:  -
 " return: -
 "---------------------------------------------------------------------- */
@@ -987,7 +987,7 @@ function! MakeC_bcc()
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  JavaƒRƒ“ƒpƒCƒ‰İ’è
+" brief:  Javaã‚³ãƒ³ãƒ‘ã‚¤ãƒ©è¨­å®š
 " param:  -
 " return: -
 "---------------------------------------------------------------------- */
@@ -996,14 +996,14 @@ function! MakeJava()
 	:cw
 endfunction
 
-"ƒfƒoƒbƒO
+"ãƒ‡ãƒãƒƒã‚°
 function! DebugRuby()
 	:make -Ks %
 	:cw
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  perlƒVƒ“ƒ^ƒbƒNƒXƒGƒ‰[İ’è
+" brief:  perlã‚·ãƒ³ã‚¿ãƒƒã‚¯ã‚¹ã‚¨ãƒ©ãƒ¼è¨­å®š
 " param:  -
 " return: -
 "---------------------------------------------------------------------- */
@@ -1013,7 +1013,7 @@ function! MakePerl()
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  gccƒRƒ“ƒpƒCƒ‰İ’è (Objective-C)
+" brief:  gccã‚³ãƒ³ãƒ‘ã‚¤ãƒ©è¨­å®š (Objective-C)
 " param:  -
 " return: -
 "---------------------------------------------------------------------- */
@@ -1051,7 +1051,7 @@ function! Ruby_eval_vsplit() range
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  ‹å“Ç“_‚ğ.‚â,‚É•ÏŠ·‚·‚é(Tex)
+" brief:  å¥èª­ç‚¹ã‚’.ã‚„,ã«å¤‰æ›ã™ã‚‹(Tex)
 " param:  -
 " return: -
 "---------------------------------------------------------------------- */
@@ -1063,14 +1063,14 @@ function! ConvertTexPunctuation()
 				\ ' 2. Cancel']
 				\ )
 	if choice == 1
-		:%s/B/D/g
-		:%s/A/C/g
+		:%s/ã€‚/ï¼/g
+		:%s/ã€/ï¼Œ/g
 	endif
 
 endfunction
 
 "/* ----------------------------------------------------------------------
-" brief:  ‹å“Ç“_‚ğ.‚â,‚É•ÏŠ·‚·‚é(HTML)
+" brief:  å¥èª­ç‚¹ã‚’.ã‚„,ã«å¤‰æ›ã™ã‚‹(HTML)
 " param:  -
 " return: -
 "---------------------------------------------------------------------- */
@@ -1082,8 +1082,8 @@ function! ConvertHTMLPunctuation()
 				\ ' 2. Cancel']
 				\ )
 	if choice == 1
-		:%s/B/. /g
-		:%s/A/, /g
+		:%s/ã€‚/. /g
+		:%s/ã€/, /g
 	endif
 
 endfunction
@@ -1091,17 +1091,17 @@ endfunction
 " {{{ Alternate functions
 
 " " /* ----------------------------------------------------------------------
-" " brief:  CŒ¾ŒêŒn(C,C++,Java,JavaScript)‚ÌƒZƒ~ƒRƒƒ“İ’è(ŒÄo‚µ‘¤)
-		" " ƒZƒ~ƒRƒƒ“‚ª‰Ÿ‚³‚ê‚½‚Æ‚«‚Éˆê‚É‰üs‚·‚é‚æ‚¤‚É‚·‚éB
+" " brief:  Cè¨€èªç³»(C,C++,Java,JavaScript)ã®ã‚»ãƒŸã‚³ãƒ­ãƒ³è¨­å®š(å‘¼å‡ºã—å´)
+		" " ã‚»ãƒŸã‚³ãƒ­ãƒ³ãŒæŠ¼ã•ã‚ŒãŸã¨ãã«ä¸€ç·’ã«æ”¹è¡Œã™ã‚‹ã‚ˆã†ã«ã™ã‚‹ã€‚
 " " param:  -
-" " return: ; or ;+‰üs
-" " snippetsEmu.vim‚ªg‚¦‚È‚¢ŠÂ‹«‚Ì‚Æ‚«‚É—LŒø‚É‚È‚Á‚Ä‚¢‚éGetSemicolonForC‚Æ·‚µ‘Ö‚¦‚é‚±‚Æ
+" " return: ; or ;+æ”¹è¡Œ
+" " snippetsEmu.vimãŒä½¿ãˆãªã„ç’°å¢ƒã®ã¨ãã«æœ‰åŠ¹ã«ãªã£ã¦ã„ã‚‹GetSemicolonForCã¨å·®ã—æ›¿ãˆã‚‹ã“ã¨
 " " ---------------------------------------------------------------------- */
 " function! GetSemicolonForC()
-	" "©“®“I‚É(){}‚ğ•t—^‚·‚é
+	" "è‡ªå‹•çš„ã«(){}ã‚’ä»˜ä¸ã™ã‚‹
 	" let result =  AutoEndForC()
 	" if result == "NF"
-		" ";+‰üs or ;
+		" ";+æ”¹è¡Œ or ;
 		" return AutoSemicolonEnterForC()
 
 	" endif
@@ -1111,7 +1111,7 @@ endfunction
 " endfunction
 
 " "/* ----------------------------------------------------------------------
-" " brief:  CŒ¾ŒêŒn(C,C++,Java,JavaScript)‚Ìif•¶‚â for•¶‚Ì“ü—Í•â•
+" " brief:  Cè¨€èªç³»(C,C++,Java,JavaScript)ã®ifæ–‡ã‚„ foræ–‡ã®å…¥åŠ›è£œåŠ©
 " " param:  -
 " " return: keymap or 'NF'
 " "---------------------------------------------------------------------- */
@@ -1152,15 +1152,15 @@ endfunction
 
 " inoremap <expr> : GetColonForC()
 " "/* ----------------------------------------------------------------------
-" " brief:  switch-case•¶’†‚Ì:‚ğ:+‚ª“ü—Í‚³‚ê‚½‚Æ‚«‚É+‰üs‚ğs‚¤
+" " brief:  switch-caseæ–‡ä¸­ã®:ã‚’:+ãŒå…¥åŠ›ã•ã‚ŒãŸã¨ãã«+æ”¹è¡Œã‚’è¡Œã†
 " " param:  -
-" " return: : or :+‰üs+break;
-" " snippetsEmu.vim‚ªg‚¦‚È‚¢ŠÂ‹«‚Ì‚Æ‚«‚ÉƒRƒƒ“ƒgƒAƒEƒg‚ğ‚Í‚¸‚·‚±‚Æ
+" " return: : or :+æ”¹è¡Œ+break;
+" " snippetsEmu.vimãŒä½¿ãˆãªã„ç’°å¢ƒã®ã¨ãã«ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã‚’ã¯ãšã™ã“ã¨
 " "---------------------------------------------------------------------- */
 " function! GetColonForC()
 	" let line = strpart(getline('.'), 0, col('.') - 1)
 
-	" "switch•¶‚Ìcase or default‚ğ‹Lq’†‚©?
+	" "switchæ–‡ã®case or defaultã‚’è¨˜è¿°ä¸­ã‹?
 	" let serchWords = [
 				" \ '^\t*case \=',
 				" \ '^\t*default$'
@@ -1184,10 +1184,10 @@ endfunction
 " endfunction
 
 " "/* ----------------------------------------------------------------------
-" " brief:  ƒvƒŒ[ƒXƒzƒ‹ƒ_ŠÔ‚ÌˆÚ“®‚ğ—LŒø‚É‚·‚é
+" " brief:  ãƒ—ãƒ¬ãƒ¼ã‚¹ãƒ›ãƒ«ãƒ€é–“ã®ç§»å‹•ã‚’æœ‰åŠ¹ã«ã™ã‚‹
 " " param:  -
-" " Vim-LaTeX‚©‚çƒvƒŒ[ƒzƒ‹ƒ_ŠÔ‚ÌˆÚ“®‚ÉŠÖ‚·‚éƒR[ƒh‚ğ”²‚«o‚µ‚ÄƒJƒXƒ^ƒ}ƒCƒY‚µ‚½‚â‚Â
-" " snippetsEmu.vim‚ªg‚¦‚È‚¢ŠÂ‹«‚Ì‚Æ‚«‚ÉƒRƒƒ“ƒgƒAƒEƒg‚ğ‚Í‚¸‚·‚±‚Æ
+" " Vim-LaTeXã‹ã‚‰ãƒ—ãƒ¬ãƒ¼ãƒ›ãƒ«ãƒ€é–“ã®ç§»å‹•ã«é–¢ã™ã‚‹ã‚³ãƒ¼ãƒ‰ã‚’æŠœãå‡ºã—ã¦ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºã—ãŸã‚„ã¤
+" " snippetsEmu.vimãŒä½¿ãˆãªã„ç’°å¢ƒã®ã¨ãã«ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã‚’ã¯ãšã™ã“ã¨
 " "---------------------------------------------------------------------- */
 " let g:Imap_DeleteEmptyPlaceHolders = 1
 " let s:RemoveLastHistoryItem = ':call histdel("/", -1)|let @/=g:Tex_LastSearchPattern'

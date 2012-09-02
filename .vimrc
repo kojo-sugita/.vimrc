@@ -4,17 +4,23 @@
 " {{{ Common setting
 "/* --- フォント, 背景色設定 --- */
 "背景色
+
 colorscheme rootwater
+
+set transparency=10
+
+" set imdisable
+set imdisableactivate
 
 "フォント設定
 if has("unix")
-	" set guifont=IPAMonaGothic\ 12
+
 	" set guifontwide=IPAMonaGothic\ 12
-	set guifont=Bitstream\ Vera\ Sans\ Mono\ 12
-	set guifontwide=Bitstream\ Vera\ Sans\ Mono\ 12
-	set printfont=IPAMonaGothic\ 12
+	"set guifont=Bitstream\ Vera\ Sans\ Mono\ 12
+	"set guifontwide=Bitstream\ Vera\ Sans\ Mono\ 12
+	"set printfont=IPAMonaGothic\ 12
 	autocmd GUIEnter * winpos 200 100
-	autocmd GUIEnter * winsize 80 50
+	autocmd GUIEnter * winsize 80 80
 
 elseif has("gui_win32")
 	" set guifont=HGｺﾞｼｯｸM:h11
@@ -24,6 +30,7 @@ elseif has("gui_win32")
 	set printfont=MS_Gothic:h11:cSHIFTJIS
 	autocmd GUIEnter * winpos 200 100
 	autocmd GUIEnter * winsize 100 50
+
 endif
 
 "/* --- 表示 --- */
@@ -188,8 +195,9 @@ set nocompatible    "VI互換をオフ
 "completeを初期化
 au FileType * set complete=.,w,b,u,t,i
 
-"<Leader>を\にする
-let mapleader = '\'
+"<Leader>を,にする
+" let mapleader = '\'
+map , <Leader>
 
 "連続する空白行を圧縮する
 nnoremap <silent> <C-x><C-o> :call DeleteBlankLines()<CR>
@@ -1314,3 +1322,4 @@ endfunction
 " }}}
 
 " vim: set foldmethod=marker: set fenc=utf-8:
+"

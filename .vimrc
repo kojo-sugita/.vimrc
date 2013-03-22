@@ -219,7 +219,7 @@ autocmd FileType *
 " {{{ Programing language
 au BufNewFile,BufRead *.bat,*.cmd call DosBatchSettings()
 au BufNewFile,BufRead *.vb,*vbs call VBScriptSettings()
-au BufNewFile,BufRead *.c,*.h,*.cpp,*.java,*.js,*.pl,*.cgi call CCommonSettings()
+au BufNewFile,BufRead *.c,*.h,*.cpp,*.java,*.js,*php,*.pl,*.cgi call CCommonSettings()
 au BufNewFile,BufRead *.c,*.h call CSettings()
 au BufNewFile,BufRead *.cpp call CppSettings()
 au BufNewFile,BufRead *.java call JavaSettings()
@@ -263,7 +263,7 @@ function! VBScriptSettings()
 
 endfunction
 " }}}
-" {{{ C,C++,Java,JavaScript commonness
+" {{{ C,C++,Java,JavaScript,PHP commonness
 function! CCommonSettings()
 
 	set cindent
@@ -511,6 +511,10 @@ endfunction
 " }}}
 " {{{ PHP
 function! PHPSettings()
+
+	"タブ幅を4, タブ文字の変わりにスペース
+	set nowrap tabstop=4 tw=0 sw=4 expandtab
+
 	"辞書ファイルの設定
 	if has("unix")
 		set dictionary=$HOME/.vim/dict/PHP.dict
@@ -641,7 +645,10 @@ endfunction
 " }}}
 " }}}
 " {{{ Plugins
-"
+
+" neocomplcache
+let g:neocomplcache_enable_at_startup = 1
+
 "NERD_comments
 let NERDSpaceDelims = 1
 let NERDShutUp = 1
